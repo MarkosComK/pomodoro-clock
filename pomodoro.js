@@ -26,6 +26,7 @@ function pomodoro(){
         minutes--
         if(minutes == 0){
             stop()
+            startBreak()
         } else {
             seconds = 60
         }
@@ -36,8 +37,9 @@ function pomodoro(){
 }
 
 function startBreak(){
-    minutes = 4
-    startTimer()
+    startBtn.innerHTML = `break`
+    minutes = 1
+    played = false
 }
 
 function stop(){
