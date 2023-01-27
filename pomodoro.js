@@ -1,6 +1,6 @@
 var startBtn = document.querySelector('#start')
-var minutes = 1
-var seconds = 2
+var minutes = 24
+var seconds = 60
 var clock = document.querySelector('#clock')
 
 //alows setInterval to get just one call
@@ -36,7 +36,7 @@ function pomodoro(){
                 startBreak()
             }
         } else {
-            seconds = 6
+            seconds = 60
         }
     } else {
         seconds--
@@ -46,7 +46,7 @@ function pomodoro(){
 
 function startBreak(){
     startBtn.innerHTML = `break`
-    minutes = 2
+    minutes = 5
     played = false
     breakStatus = true
 }
