@@ -1,12 +1,24 @@
 var startBtn = document.querySelector('#start')
-var minutes = 24
-var seconds = 60
+var minutes = 1
+var seconds = 2
 var clock = document.querySelector('#clock')
+
+//alows setInterval to get just one call
+var played = false 
+// 
 
 start.addEventListener('click', startTimer)
 
 function startTimer(){
-    counting = setInterval(pomodoro, 1000)
+    if(played == false){
+        counting = setInterval(pomodoro, 1000)
+        played = true
+        startBtn.innerHTML = `stop`
+    } else {
+        startBtn.innerHTML = `start`
+        stop()
+        played = false
+    }
 }
 
 function pomodoro(){
@@ -21,6 +33,11 @@ function pomodoro(){
         seconds--
     }
     clock.innerHTML = `${minutes} : ${seconds}`
+}
+
+function startBreak(){
+    minutes = 4
+    startTimer()
 }
 
 function stop(){
