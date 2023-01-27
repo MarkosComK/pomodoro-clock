@@ -28,13 +28,13 @@ section{
 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: min(2em, 8vw);
 }
 
 #clock{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: min(5em, 18vw);
 }
 
 #app{
@@ -44,7 +44,7 @@ p{
     flex-direction: column;
 
     aspect-ratio: 1 / 1;
-    width: max(30%, 200px);
+    width: max(30%, 250px);
 }
 
 button, input[type="submit"], input[type="reset"] {
