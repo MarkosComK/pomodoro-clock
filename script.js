@@ -1,5 +1,6 @@
 var startBtn = document.querySelector('#start')
-var time = 5
+var minutes = 1
+var seconds = 10
 var clock = document.querySelector('#clock')
 
 start.addEventListener('click', startTimer)
@@ -9,12 +10,17 @@ function startTimer(){
 }
 
 function pomodoro(){
-    if(time == 0){
-        stop()
+    if(seconds == 0){
+        minutes--
+        if(minutes == 0){
+            stop()
+        } else {
+            seconds = 60
+        }
     } else {
-        time--
+        seconds--
     }
-    clock.innerHTML = `${time}`
+    clock.innerHTML = `${minutes} : ${seconds}`
 }
 
 function stop(){
