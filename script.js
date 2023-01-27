@@ -1,6 +1,6 @@
 var startBtn = document.querySelector('#start')
-var minutes = 1
-var seconds = 10
+var minutes = 24
+var seconds = 60
 var clock = document.querySelector('#clock')
 
 start.addEventListener('click', startTimer)
