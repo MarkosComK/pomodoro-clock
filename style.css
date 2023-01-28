@@ -35,6 +35,8 @@ p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: min(5em, 18vw);
+
+    text-shadow: 2px 4px 4px #a0a0a0;
 }
 
 #app{
@@ -46,6 +48,7 @@ p{
     aspect-ratio: 1 / 1;
     width: max(30%, 250px);
 }
+
 
 button, input[type="submit"], input[type="reset"] {
 	background: none;

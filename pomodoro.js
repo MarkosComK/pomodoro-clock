@@ -4,7 +4,7 @@ var seconds = 60
 var clock = document.querySelector('#clock')
 
 
-var playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>'
+var playIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-2 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>'
 var pauseIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>'
 //alows setInterval to get just one call
 var played = false 
