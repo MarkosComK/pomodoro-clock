@@ -14,6 +14,8 @@ var clockIconPause = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height=
 //alows setInterval to get just one call
 var played = false
 // 
+
+var restStatus = false
 var breakStatus = false
 
 start.addEventListener('click', startTimer)
@@ -59,26 +61,41 @@ function pomodoro(){
         minutes--
         if(minutes == -1){
             if(breakStatus == true){
-                minutes = 24
+                minutes = 25
                 stop()
                 startBtn.innerHTML = playIcon
                 played = false
+                breakStatus = false
             } else {
                 stop()
                 startBreak()
             }
         } else {
-            seconds = 60
+            if(restStatus == true){
+                seconds = 59
+            } else {
+                seconds = 60
+            }
         }
     } else {
         seconds--
     }
     clock.innerHTML = `${minutes} : ${seconds}`
+    if(seconds < 10){
+        clock.innerHTML = `${minutes} : 0${seconds}`
+    }
+    if(minutes < 10){
+        clock.innerHTML = `0${minutes} : ${seconds}`
+    }
+    if(minutes < 10 && seconds < 10){
+        clock.innerHTML = `0${minutes} : 0${seconds}`
+    }
 }
 
 function startBreak(){
-    startBtn.innerHTML = `break`
+    startBtn.innerHTML = playIcon
     minutes = 5
+    restStatus = true
     played = false
     breakStatus = true
 }
