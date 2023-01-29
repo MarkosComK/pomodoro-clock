@@ -15,10 +15,28 @@ body{
     height: 100vh;
 }
 
+#topIcons{
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    width: 100vw;
+}
+
+#restart{
+    height: 22px;
+}
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 
     width: 100vw;
@@ -48,6 +66,7 @@ p{
     aspect-ratio: 1 / 1;
     width: max(30%, 250px);
 }
+
 
 
 button, input[type="submit"], input[type="reset"] {
