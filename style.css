@@ -13,6 +13,11 @@ body{
 
     width: 100vw;
     height: 100vh;
+
+    background-image: url('assets/images/windows-xp-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 #topIcons{
@@ -69,7 +74,9 @@ p{
     flex-direction: column;
 
     aspect-ratio: 1 / 1;
-    width: max(30%, 250px);
+    width: max(30%, 100%);
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.507);
 }
 
 
