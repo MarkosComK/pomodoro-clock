@@ -30,7 +30,12 @@ body{
 
 #restart{
     height: 22px;
+    transition: transform 0.5s;
 }
+
+#restart:hover {
+    transform: rotate(-360deg);
+  }
 
 section{
     display: flex;
