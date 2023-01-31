@@ -9,13 +9,17 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-y: hidden;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
 
 
-    height: 80vh;
+    height: 98vh;
 
     font-family: 'VT323', monospace;
 
@@ -26,13 +30,22 @@ body{
 
 #options{
     font-size: 12px;
-    border: 1px solid red;
+
 
     display: flex;
     align-items: center;
     padding-left: 4px;
 }
-
+.options-items{
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+    height: 23px;
+}
+.options-items:hover{
+    cursor: pointer;
+    background-color: rgb(92, 92, 252);
+}
 #topIcons{
     display: flex;
     justify-content: space-between;
@@ -40,7 +53,7 @@ body{
 
     padding: 10px;
 
-    width: 100%;
+    width: 90%;
 }
 
 #restart{
