@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
+
+
 
 *{
     margin: 0;
@@ -11,26 +14,33 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 100vw;
-    height: 100vh;
+
+    height: 80vh;
+
+    font-family: 'VT323', monospace;
 
     background-image: url('assets/images/windows-xp-bg.jpg');
     background-size: cover;
     background-position: center;
+}
 
+#options{
+    font-size: 12px;
+    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
 }
 
 #topIcons{
-    position: absolute;
-    top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 10px;
 
-    width: 100vw;
+    width: 100%;
 }
 
 #restart{
@@ -80,14 +90,56 @@ p{
     align-items: center;
     flex-direction: column;
 
-    aspect-ratio: 1 / 1;
-    width: max(30%, 100%);
+    padding-bottom: 30px;
+
+    /* aspect-ratio: 1 / 1; */
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.507);
 
 }
 
+#taskBar{
+    position: fixed;
+    bottom: 0;
 
+    width: 100vw;
+    height: 38px;
+    background-color: #C3C3C3;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+
+#startBtn{
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #B1B1B1;
+    border-bottom: 1px solid #B1B1B1;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    top: 4px;
+    left: 4px;
+    width: 70px;
+    height: 30px;
+}
+
+#startIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.activeBtn{
+    background-color: #FFF;
+
+    border-top: 2px solid #9c9c9c;
+    border-left: 2px solid #9c9c9c;
+    border-right: 2px solid #B3B3B3;
+    border-bottom: 2px solid #B3B3B3;
+}
 
 button, input[type="submit"], input[type="reset"] {
 	background: none;
