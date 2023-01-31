@@ -87,7 +87,6 @@ function pomodoro(){
     }
     clock.innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
 }
-
 function formatTime(time) {
     return time < 10 ? `0${time}` : `${time}`;
 }
