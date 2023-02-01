@@ -23,12 +23,12 @@ body{
 
     font-family: 'VT323', monospace;
 
-    background-image: url('assets/images/windows-xp-bg.jpg');
+    background-image: url('../assets/images/windows-xp-bg.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#options{
+.options{
     font-size: 12px;
 
 
@@ -90,12 +90,6 @@ p{
     text-shadow: 2px 4px 4px #a0a0a0;
 }
 
-#window{
-    position: absolute;
-    left: 50px;
-    top: 50px;
-
-}
 
 #app{
     display: flex;
@@ -112,47 +106,6 @@ p{
 
 }
 
-#taskBar{
-    position: fixed;
-    bottom: 0;
-
-    width: 100vw;
-    height: 38px;
-    background-color: #C3C3C3;
-    border-top: 1px solid #FFF;
-    border-left: 1px solid #FFF;
-}
-
-#startBtn{
-    border-top: 1px solid #FFF;
-    border-left: 1px solid #FFF;
-    border-right: 1px solid #B1B1B1;
-    border-bottom: 1px solid #B1B1B1;
-    position: absolute;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    top: 4px;
-    left: 4px;
-    width: 70px;
-    height: 30px;
-}
-
-#startIcon{
-    width: 20px;
-    height: 20px;
-}
-
-.activeBtn{
-    background-color: #FFF;
-
-    border-top: 2px solid #9c9c9c;
-    border-left: 2px solid #9c9c9c;
-    border-right: 2px solid #B3B3B3;
-    border-bottom: 2px solid #B3B3B3;
-}
 
 button, input[type="submit"], input[type="reset"] {
 	background: none;

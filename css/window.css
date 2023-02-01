@@ -1,7 +1,12 @@
 #window{
-    width: max(30%, 270px);
-    border: 1px solid #C3C3C3
+    width: 400px;
+    border: 1px solid #C3C3C3;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
+
 
 #top{
     display: flex;
@@ -15,7 +20,7 @@
     
 }
 
-#options{
+.options{
     height: 24px;
     background-color: #C3C3C3;
     box-shadow: inset 1px 1px 1px 0px #000000;
@@ -34,17 +39,17 @@
 }
 
 #minimize{
-    background-image: url('assets/icons/minimize.png');
+    background-image: url('../assets/icons/minimize.png');
     background-size: cover;
 }
 
 #restore{
-    background-image: url('assets/icons/restore.png');
+    background-image: url('../assets/icons/restore.png');
     background-size: cover;
 }
 
 #close{
-    background-image: url('assets/icons/close.png');
+    background-image: url('../assets/icons/close.png');
     background-size: cover;
 }
 

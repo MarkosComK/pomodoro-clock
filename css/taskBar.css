@@ -1,0 +1,32 @@
+#taskBar{
+    position: fixed;
+    bottom: 0;
+
+    width: 100vw;
+    height: 38px;
+    background-color: #C3C3C3;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+
+#startBtn{
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #B1B1B1;
+    border-bottom: 1px solid #B1B1B1;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    top: 4px;
+    left: 4px;
+    width: 70px;
+    height: 30px;
+}
+
+#startIcon{
+    width: 20px;
+    height: 20px;
+}
