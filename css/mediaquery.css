@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    #notch{
+        position: absolute;
+        top: 5px;
+
+        z-index: 10;
+
+
+        width: 100px;
+        height: 25px;
+        border-radius: 15px;
+
+        background-color: black;
+    }
+    #taskBar{
+        justify-content: center;
+    }
+    #startBtn{
+        position: relative;
+    }
+    #taskBarClock{
+        display: none;
+    }
+  }

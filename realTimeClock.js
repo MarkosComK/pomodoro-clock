@@ -7,7 +7,7 @@ setInterval(getTime, 10000)
 
 function getTime(){
     date = new Date()
-    taskClock.innerHTML = `${date.getHours()}:${date.getMinutes()}`
+    taskClock.innerHTML = `${taskClockIcon} ${date.getHours()}:${date.getMinutes()}`
 }
 
 
