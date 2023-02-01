@@ -1,4 +1,7 @@
 #taskBar{
+    display: flex;
+    justify-content: flex-end;
+
     position: fixed;
     bottom: 0;
 
@@ -27,6 +30,28 @@
 }
 
 #startIcon{
+    width: 20px;
+    height: 20px;
+}
+
+#taskBarClock{
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    width: 90px; 
+    height: 30px; 
+    
+    margin-right: 4px;
+}
+
+#taskBarClockIcon{
     width: 20px;
     height: 20px;
 }

@@ -1,8 +1,8 @@
 var app = document.querySelector('#window')
 var topBar = document.querySelector('#top')
 // these variables saves the position of the app in X/Y
-var appX = 0 
-var appY = 0
+var appX = 50 
+var appY = 50
 
 // Saves the position of mouse Start and end in X/Y
 var mouseStartX
