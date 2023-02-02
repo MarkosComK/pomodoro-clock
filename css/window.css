@@ -91,6 +91,10 @@
     background-size: cover;
 }
 
+#close:hover{
+    cursor: pointer;
+}
+
 
 #app{
     display: flex;
@@ -123,7 +127,9 @@
 }
 
 #bottom div{
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    
     width: 48%;
 
     border-top: 2px solid #333333;
