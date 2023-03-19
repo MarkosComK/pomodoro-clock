@@ -1,86 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap')
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'colors.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    overflow-y: hidden;
+html {
+  overflow-y: hidden;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    height: 98vh;
-
-    font-family: 'VT323', monospace;
-
-    background-image: url('../assets/images/windows-xp-bg.jpg');
-    background-size: cover;
-    background-position: center;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0 56px;
+  height: 98vh;
+  font-family: "Kumbh Sans", monospace;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--dark-bg-1);
+  color: var(--grey-purple);
 }
 
-#topIcons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 10px;
-
-    width: 90%;
+header p {
+  font-size: 2rem;
 }
 
-#restart{
-    height: 22px;
-    transition: transform 0.5s;
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+section .top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--dark-bg-2);
+  width: 373px;
+  height: 63px;
+  border-radius: 1.969rem;
+}
+section .top-buttons button {
+  width: 120px;
+  height: 48px;
+  margin: 7px;
+  border-radius: 1.656rem;
+  font-size: 0.875rem;
+}
+section .top-buttons button:focus {
+  background-color: var(--orange);
 }
 
-#restart:hover {
-    transform: rotate(-360deg);
-  }
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-
-    width: 100vw;
-    height: 100vh;
+main {
+  width: 410px;
+  height: 410px;
+  background: linear-gradient(110deg, #0E112A, #2E325A);
+  border-radius: 50%;
+}
+main .countdown-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 366px;
+  height: 366px;
+  margin: 22px;
+  background-color: var(--dark-bg-2);
+  border-radius: 50%;
+}
+main .orange-right {
+  position: absolute;
+  width: 169px;
+  height: 339px;
+  background-color: var(--orange);
+  border-radius: 0 169px 169px 0;
+  transform: translateX(50%);
+}
+main .orange-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 339px;
+  background-color: var(--orange);
+  border-radius: 169px 0 0 169px;
+  transform: translateX(-50%);
+}
+main .clock {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 317px;
+  height: 317px;
+  background-color: var(--dark-bg-2);
+  border-radius: 50%;
+  transform: translateX(26.5%);
+}
+main .clock h2 {
+  font-size: 6.25rem;
+}
+main .clock p {
+  font-size: 1rem;
+  letter-spacing: 15px;
+  text-transform: uppercase;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: min(2em, 8vw);
-}
-
-#clock{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: min(5em, 18vw);
-
-    text-shadow: 2px 4px 4px #a0a0a0;
-}
-
-
-
-
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
+button, input[type=submit], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}/*# sourceMappingURL=main.css.map */
