@@ -58,13 +58,13 @@ section .top-buttons button:focus {
   background-color: var(--orange);
 }
 
-main {
+.app {
   width: 410px;
   height: 410px;
   background: linear-gradient(110deg, #0E112A, #2E325A);
   border-radius: 50%;
 }
-main .countdown-bg {
+.app .countdown-bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ main .countdown-bg {
   background-color: var(--dark-bg-2);
   border-radius: 50%;
 }
-main .orange-right {
+.app .orange-right {
   position: absolute;
   width: 169px;
   height: 339px;
@@ -82,7 +82,7 @@ main .orange-right {
   border-radius: 0 169px 169px 0;
   transform: translateX(50%);
 }
-main .orange-countdown {
+.app .orange-countdown {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,16 @@ main .orange-countdown {
   border-radius: 169px 0 0 169px;
   transform: translateX(-50%);
 }
-main .clock {
+.app .cover {
+  position: absolute;
+  width: 169px;
+  height: 339px;
+  z-index: 1;
+  background-color: var(--dark-bg-2);
+  border-radius: 169px 0 0 169px;
+  transform: translateX(-50%);
+}
+.app .clock {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -100,17 +109,26 @@ main .clock {
   align-items: center;
   width: 317px;
   height: 317px;
+  z-index: 2;
   background-color: var(--dark-bg-2);
   border-radius: 50%;
-  transform: translateX(26.5%);
 }
-main .clock h2 {
+.app .clock h2 {
   font-size: 6.25rem;
 }
-main .clock p {
+.app .clock p {
   font-size: 1rem;
   letter-spacing: 15px;
   text-transform: uppercase;
+}
+
+.settings {
+  position: absolute;
+  width: 540px;
+  height: 464px;
+  border-radius: 1.563rem;
+  z-index: 10;
+  background-color: var(--white);
 }
 
 button, input[type=submit], input[type=reset] {

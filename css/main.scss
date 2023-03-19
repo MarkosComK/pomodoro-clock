@@ -73,7 +73,7 @@ section{
     }
 }
 
-main{
+.app{
 
     width: 410px;
     height: 410px;
@@ -119,7 +119,15 @@ main{
         transform: translateX(-50%);
     }
     .cover{
+        position: absolute;
+        width: 169px;
+        height: 339px;
         
+        z-index: 1;
+
+        background-color: var(--dark-bg-2);
+        border-radius: 169px 0 0 169px;
+        transform: translateX(-50%);
     }
     .clock{
         position: absolute;
@@ -131,10 +139,10 @@ main{
         width: 317px;
         height: 317px;
 
+        z-index: 2;
 
         background-color: var(--dark-bg-2);
         border-radius: 50%;
-        transform: translateX(26.5%);
 
         h2{
             font-size: 6.25rem;
@@ -147,6 +155,20 @@ main{
     }
 }
 
+.settings{
+    position: absolute;
+
+    width: 540px;
+    height: 464px;
+
+    border-radius: 1.563rem;
+
+    z-index: 10;
+
+    background-color: var(--white);
+
+
+}
 
 button, input[type="submit"], input[type="reset"] {
 	background: none;
