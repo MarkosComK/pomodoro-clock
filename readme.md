@@ -59,6 +59,31 @@ Final version
 
 It`s really challenging make an round countdown need some "jerry-rig" with the css to make the countdown look's like a round countdown
 
+this is the first version movable window code
+```js
+topBar.addEventListener('mousedown', dragStart)
+topBar.addEventListener('mouseup', dragEnd)
+// topBar.addEventListener('mouseout', dragOut)
+topBar.addEventListener('mousemove', move)
+
+
+function dragStart(e){
+    mouseStartX = e.clientX
+    mouseStartY = e.clientY
+    isDragging = true
+}
+
+function dragEnd(e){
+    mouseEndX = e.clientX
+    mouseEndY = e.clientY
+    appX += mouseEndX - mouseStartX
+    appY += mouseEndY - mouseStartY
+    isDragging = false
+}
+
+```
+
+
 below the root colors
 ```css
   :root{
