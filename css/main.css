@@ -328,4 +328,8 @@ section .top-buttons button:focus {
   background-color: var(--orange);
   color: var(--white);
   border-radius: 26.5px;
+}
+
+.close {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
