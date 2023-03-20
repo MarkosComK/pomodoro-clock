@@ -26,6 +26,16 @@ body {
   color: var(--grey-purple);
 }
 
+button, input[type=number], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 header p {
   font-size: 2rem;
 }
@@ -129,14 +139,193 @@ section .top-buttons button:focus {
   border-radius: 1.563rem;
   z-index: 10;
   background-color: var(--white);
+  color: var(--dark-bg-2);
+}
+.settings header {
+  width: 100%;
+  height: 93px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings header h2 {
+  font-size: 1.75rem;
+  margin: 40px;
+}
+.settings header button {
+  margin: 40px;
+}
+.settings header::before {
+  position: absolute;
+  top: 93px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+.settings main {
+  width: 462px;
+  height: 370px;
+}
+.settings main .time-settings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.settings main .time-settings h3 {
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+  font-weight: bold;
+}
+.settings main .time-settings .inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.settings main .time-settings .inputs div p {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  color: rgba(30, 33, 63, 0.4);
+}
+.settings main .time-settings .inputs div input {
+  width: 140px;
+  height: 48px;
+  background-color: var(--grey);
+  color: var(--dark-bg-1);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 16px;
+}
+.settings main .time-settings .inputs::before {
+  position: absolute;
+  top: 251px;
+  content: "";
+  width: 460px;
+  height: 1px;
+  background-color: #e3e3e3;
 }
 
-button, input[type=submit], input[type=reset] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+.font-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 49px;
+}
+.font-settings h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.813rem;
+}
+.font-settings .fonts {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+}
+.font-settings .fonts button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: var(--grey);
+}
+.font-settings .fonts button:focus {
+  background-color: var(--dark-bg-1);
+  color: var(--white);
+}
+.font-settings .fonts button .font-1 {
+  font-family: "Kombh Sans";
+}
+.font-settings .fonts button .font-2 {
+  font-family: "Roboto";
+}
+.font-settings .fonts button .font-3 {
+  font-family: "Space Mono";
+}
+.font-settings::before {
+  position: absolute;
+  top: 340px;
+  content: "";
+  width: 460px;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
+.color-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 49px;
+}
+.color-settings h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.813rem;
+}
+.color-settings .colors {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+}
+.color-settings .colors button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: var(--grey);
+}
+.color-settings .colors button:nth-child(1) {
+  background-color: var(--orange);
+  color: var(--orange);
+}
+.color-settings .colors button:nth-child(2) {
+  background-color: var(--blue);
+  color: var(--blue);
+}
+.color-settings .colors button:nth-child(3) {
+  background-color: var(--purple);
+  color: var(--purple);
+}
+.color-settings .colors button:focus {
+  color: var(--dark-bg-1);
+}
+.color-settings .colors button .font-1 {
+  font-family: "Kombh Sans";
+}
+.color-settings .colors button .font-2 {
+  font-family: "Roboto";
+}
+.color-settings .colors button .font-3 {
+  font-family: "Space Mono";
+}
+.color-settings::before {
+  position: absolute;
+  top: 340px;
+  content: "";
+  width: 460px;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
+.apply {
+  position: relative;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 53px;
+  font-weight: bold;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 26.5px;
 }/*# sourceMappingURL=main.css.map */
