@@ -1,0 +1,45 @@
+.orange-right{
+    position: relative;
+    left: 169px;
+
+    width: 169px;
+    height: 339px;
+
+    border-radius: 0 169px 169px 0;
+    transform-origin: left center;
+    
+}
+.orange-countdown{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    width: 169px;
+    height: 339px;
+    position: relative;
+    left: -169px;
+    
+    border-radius: 169px 0 0 169px;
+    transform-origin: right center;
+}
+.cover{
+    position: absolute;
+    width: 172px;
+    height: 342px;
+    
+    z-index: 1;
+
+    background-color: var(--dark-bg-2);
+    border-radius: 169px 0 0 169px;
+    transform: translateX(-50%);
+}
+
+// .orange-countdown:hover{
+//     transform: rotate(-180deg);
+//     transition: 1s linear;
+// }
+// .orange-right:hover{
+//     transform: rotate(-360deg);
+//     transition: 2s linear;
+// }

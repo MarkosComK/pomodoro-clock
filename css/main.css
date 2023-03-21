@@ -99,31 +99,6 @@ section .top-buttons button:focus {
   background-color: var(--dark-bg-2);
   border-radius: 50%;
 }
-.app .orange-right {
-  position: absolute;
-  width: 169px;
-  height: 339px;
-  border-radius: 0 169px 169px 0;
-  transform: translateX(50%);
-}
-.app .orange-countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 169px;
-  height: 339px;
-  border-radius: 169px 0 0 169px;
-  transform: translateX(-50%);
-}
-.app .cover {
-  position: absolute;
-  width: 169px;
-  height: 339px;
-  z-index: 1;
-  background-color: var(--dark-bg-2);
-  border-radius: 169px 0 0 169px;
-  transform: translateX(-50%);
-}
 .app .clock {
   position: absolute;
   display: flex;

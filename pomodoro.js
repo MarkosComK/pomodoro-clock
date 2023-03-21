@@ -1,3 +1,4 @@
+
 const body = document.querySelector('body')
 const startBtn = document.querySelector('#start')
 const restartBtn = document.querySelector('#restart')
@@ -6,10 +7,11 @@ var clock = document.querySelector('#clock')
 const clockSong = new Audio('assets/audio/clockSong.wav')
 clockSong.loop = true
 
-var minutes = 24
-var seconds = 60
+export var minutes = 24
+export var seconds = 60
 var shortBreakTime = 0
 var longBreakTime = 0
+var counting
 
 const applyBtn = document.querySelector('#apply')
 
@@ -28,8 +30,9 @@ spaceFont.addEventListener('click', () => {
     value = spaceFont.value
 })
 
+
 //color value
-let colorValue = 'orange'
+export let colorValue = 'orange'
 const color1 = document.querySelector('#orange-theme')
 const color2 = document.querySelector('#blue-theme')
 const color3 = document.querySelector('#purple-theme')
@@ -57,6 +60,13 @@ applyBtn.addEventListener('click', () => {
     body.classList.remove(robotoFont.value)
     body.classList.remove(spaceFont.value)
     body.classList.add(value)
+    if(value == 'space'){
+        clock.style.letterSpacing = `-${10}px`
+        clock.style.fontWeight = `${100}`
+    } else {
+        clock.style.letterSpacing = `-${0}px`
+        clock.style.fontWeight = `bold`
+    }
     //apply the color
     items.forEach((item) => {
         item.classList.add(colorValue)
@@ -112,6 +122,7 @@ function restart(){
 }
 
 function pomodoro(){
+
     if(seconds == 0){
         minutes--
         if(minutes == -1){
@@ -138,10 +149,10 @@ function pomodoro(){
     } else {
         seconds--
     }
-    clock.innerHTML = `${formatTime(minutes)} : ${formatTime(seconds)}`;
+    clock.innerHTML = `${formatTime(minutes)}:${formatTime(seconds)}`;
 }
 function formatTime(time) {
-    return time < 10 ? `0${time}` : `${time}`;
+    return time < 10 ? `0${time}`:`${time}`;
 }
 
 function startBreak(){
