@@ -1,7 +1,7 @@
 @import 'colors.css';
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@ section .top-buttons button {
   font-size: 0.875rem;
 }
 section .top-buttons button:focus {
-  background-color: var(--orange);
+  color: var(--dark-bg-1);
 }
 
 .app {
@@ -73,6 +73,21 @@ section .top-buttons button:focus {
   height: 410px;
   background: linear-gradient(110deg, #0E112A, #2E325A);
   border-radius: 50%;
+}
+.app:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #0e112a 30%, #2e325a 78%);
+  transform: translate3d(-23px, 0px, 0) scale(0.4);
+  filter: blur(100px);
+  opacity: var(1);
+  transition: opacity 0.3s;
+  border-radius: inherit;
 }
 .app .countdown-bg {
   display: flex;
@@ -88,7 +103,6 @@ section .top-buttons button:focus {
   position: absolute;
   width: 169px;
   height: 339px;
-  background-color: var(--orange);
   border-radius: 0 169px 169px 0;
   transform: translateX(50%);
 }
@@ -98,7 +112,6 @@ section .top-buttons button:focus {
   align-items: center;
   width: 169px;
   height: 339px;
-  background-color: var(--orange);
   border-radius: 169px 0 0 169px;
   transform: translateX(-50%);
 }
@@ -231,21 +244,11 @@ section .top-buttons button:focus {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  font-weight: bold;
   background-color: var(--grey);
 }
 .font-settings .fonts button:focus {
   background-color: var(--dark-bg-1);
   color: var(--white);
-}
-.font-settings .fonts button .font-1 {
-  font-family: "Kombh Sans";
-}
-.font-settings .fonts button .font-2 {
-  font-family: "Roboto";
-}
-.font-settings .fonts button .font-3 {
-  font-family: "Space Mono";
 }
 .font-settings::before {
   position: absolute;
@@ -254,6 +257,23 @@ section .top-buttons button:focus {
   width: 460px;
   height: 1px;
   background-color: #e3e3e3;
+}
+
+.font1 {
+  font-family: "Kumbh Sans";
+  font-weight: bold;
+}
+
+.font2 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.font3 {
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .color-settings {
@@ -332,4 +352,40 @@ section .top-buttons button:focus {
 
 .close {
   display: none;
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.orange-focus:focus {
+  background-color: var(--orange);
+}
+
+.blue-focus:focus {
+  background-color: var(--blue);
+}
+
+.purple-focus:focus {
+  background-color: var(--purple);
+}
+
+.kumbh {
+  font-family: "Kumbh Sans";
+}
+
+.roboto {
+  font-family: "Roboto Slab";
+}
+
+.space {
+  font-family: "Space Mono";
 }/*# sourceMappingURL=main.css.map */

@@ -14,15 +14,15 @@
     </header>
     <section>
         <div class="top-buttons">
-            <button>pomodoro</button>
-            <button>short break</button>
-            <button>long break</button>
+            <button id="top-button" class="theme-focus">pomodoro</button>
+            <button id="top-button" class="theme-focus">short break</button>
+            <button id="top-button" class="theme-focus">long break</button>
         </div>
         <main class="app">
             <div class="countdown-bg">
-                <div class="orange-right"></div>
-                <div class="cover"></div>
-                <div class="orange-countdown">
+                <div class="orange-right theme"></div>
+                <div class="cover theme" ></div>
+                <div class="orange-countdown theme">
                 </div>
                 <div class="clock">
                     <div>
@@ -30,14 +30,14 @@
                     </div>
                     <div>
                         <button id="start">
-                            <p>play</p>
+                            <p id="status">play</p>
                         </button>
                     </div>
                 </div>
             </div>
         </main>
         <div>
-            <button id="open-settings">ICON</button>
+            <button id="open-settings"><img src="assets/images/settings-icon.png" alt=""></button>
         </div>
     </section>
     <section class="settings">
@@ -51,15 +51,15 @@
                 <div class="inputs">
                     <div>
                         <p>pomodoro</p>
-                        <input type="number" value="25">
+                        <input type="number" value="25" id="pomodoro">
                     </div>
                     <div>
                         <p>short break</p>
-                        <input type="number" value="5">
+                        <input type="number" value="5" id="short-break">
                     </div>
                     <div>
                         <p>long break</p>
-                        <input type="number" value="15">
+                        <input type="number" value="15" id="long-break">
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@
                     <h3>Font</h3>
                 </div>
                 <div class="fonts">
-                    <button class="font1">Aa</button>
-                    <button class="font2">Aa</button>
-                    <button class="font3">Aa</button>
+                    <button class="font1" value="kumbh" id="kumbh-button">Aa</button>
+                    <button class="font2" value="roboto" id="roboto-button">Aa</button>
+                    <button class="font3" value="space" id="space-button">Aa</button>
                 </div>
             </div>
             <div class="color-settings">
@@ -78,13 +78,13 @@
                     <h3>Color</h3>
                 </div>
                 <div class="colors">
-                    <button class="color1">V</button>
-                    <button class="color2">V</button>
-                    <button class="color3">V</button>
+                    <button class="color1" id="orange-theme" value="orange">V</button>
+                    <button class="color2" id="blue-theme" value="blue">V</button>
+                    <button class="color3" id="purple-theme" value="purple">V</button>
                 </div>
             </div>
         </main>
-        <div class="apply"><button>Apply</button></div>
+        <div class="apply"><button id="apply">Apply</button></div>
     </section>
     <footer>
     </footer>
