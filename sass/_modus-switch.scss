@@ -1,0 +1,28 @@
+.modus-switch {
+  display: flex;
+  padding: 0.7rem;
+  background-color: var(--color-primary-dark);
+  border-radius: 42rem;
+}
+
+.btn {
+  padding: 1.8rem 2.3rem;
+  margin: 0.3rem;
+  background-color: var(--color-primary-dark);
+  border-radius: 42rem;
+  // color: rgba(var(--color-font-display), var(--alpha));
+  color: rgba(#d7e0ff, 0.4);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &--active {
+    background-color: var(--color-theme);
+    color: var(--color-primary);
+  }
+}

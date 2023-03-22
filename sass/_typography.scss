@@ -1,0 +1,46 @@
+@mixin noselection {
+  &::selection {
+    background-color: transparent;
+  }
+}
+
+.heading {
+  &-1 {
+    font-size: 9.5rem;
+    letter-spacing: -0.3rem;
+    display: inline-block;
+    @include noselection;
+  }
+  &-2 {
+    display: inline-block;
+    font-size: 2.8rem;
+    @include noselection;
+  }
+  &-3 {
+    font-size: 1.6rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    @include noselection;
+  }
+  &-4 {
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    @include noselection;
+  }
+}
+
+.body {
+  &-1 {
+    display: inline-block;
+    font-size: 1.4rem;
+    @include noselection;
+  }
+  &-2 {
+    display: inline-block;
+    font-size: 1.2rem;
+    @include noselection;
+  }
+}

@@ -1,0 +1,99 @@
+.timer {
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40rem;
+  min-width: 40rem;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(-5rem -5rem 10rem var(--color-shadow-top));
+  filter: drop-shadow(-5rem -5rem 10rem var(--color-shadow-top));
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  color: inherit;
+
+  // &:focus,
+  // &__inner:focus {
+  &:hover {
+    cursor: pointer;
+
+    outline: none;
+    -webkit-filter: drop-shadow(-5.5rem -5.5rem 12rem var(--color-shadow-top));
+    filter: drop-shadow(-5.5rem -5.5rem 12rem var(--color-shadow-top));
+    filter: brightness(1.075);
+    transition: all 0.2s;
+
+    &::after {
+      -webkit-filter: drop-shadow(
+        5.5rem 5.5rem 12rem var(--color-shadow-bottom)
+      );
+      filter: drop-shadow(5.5rem 5.5rem 12rem var(--color-shadow-bottom));
+      //   filter: brightness(1.1);
+      transition: all 0.2s;
+    }
+
+    &:hover .timer__inner .timer__status {
+      color: var(--color-theme);
+    }
+
+    // & .timer__inner {
+    // filter: brightness(1.075);
+    // transition: all 0.2s;
+    // }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right bottom, #0e112a, #2e325a);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(5rem 5rem 10rem var(--color-shadow-bottom));
+    filter: drop-shadow(5rem 5rem 10rem var(--color-shadow-bottom));
+    z-index: -10;
+    transition: all 0.2s;
+  }
+
+  &__inner {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 89%;
+    width: 89%;
+    border-radius: 50%;
+    background-color: var(--color-primary-dark);
+    position: relative;
+    transition: all 0.4s;
+    font-family: inherit;
+    color: inherit;
+  }
+
+  &__circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    stroke: var(--color-theme);
+    stroke-width: 1rem;
+    stroke-linecap: round;
+    fill: none;
+  }
+
+  &__time {
+    display: grid;
+    grid-template-columns: max-content 2rem 10.75rem;
+    justify-items: center;
+    & > h1 {
+      display: block;
+    }
+  }
+
+  &__status {
+    transform: translateX(0.75rem);
+    transition: all 0.3s;
+  }
+}

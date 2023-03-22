@@ -1,0 +1,54 @@
+//////////////
+/// Colors Global
+
+:root {
+  --color-primary: #1e213f;
+  --color-primary-dark: #161932;
+  --color-font-display: #d7e0ff;
+  --color-font-display-active: var(--color-primary);
+
+  --color-settings-bg: #fff;
+  --color-font-settings: #161932;
+  --color-font-settings-sec: #1e213f;
+  --color-settings-btn: #f87070;
+  --color-settings-stroke: #e3e1e1;
+  --color-settings-input: #eff1fa;
+
+  --color-settings-themes-1: #f87070;
+  --color-settings-themes-2: #70f3f8;
+  --color-settings-themes-3: #d881f8;
+
+  --color-shadow-top: #272c5a;
+  --color-shadow-bottom: #121530;
+
+  --alpha: 0.4;
+}
+//////////////
+/// Colors Themes
+
+.theme-1 {
+  --color-theme: #f87070;
+}
+
+.theme-2 {
+  --color-theme: #70f3f8;
+}
+
+.theme-3 {
+  --color-theme: #d881f8;
+}
+
+//////////////
+/// Fonts
+
+.font-1 {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.font-2 {
+  font-family: "Roboto Slab", serif;
+}
+
+.font-3 {
+  font-family: "Space Mono", monospace;
+}
